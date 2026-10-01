@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>AI Chat</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <header class="header">
+
+      <div class="logo">
+        <div class="logo-icon">✦</div>
+
+        <div>
+          <h1>AI Chat</h1>
+          <span>Ваш AI-помощник</span>
+        </div>
+      </div>
+
+      <button id="clearButton" class="clear-button">
+        🗑 Очистить
+      </button>
+
+    </header>
+
+
+    <main id="chat" class="chat">
+
+      <div class="welcome">
+
+        <div class="welcome-icon">
+          ✨
+        </div>
+
+        <h2>Привет! 👋</h2>
+
+        <p>
+          Я AI-помощник. Задай мне любой вопрос.
+        </p>
+
+        <div class="suggestions">
+
+          <button class="suggestion">
+            💡 Объясни сложную тему
+          </button>
+
+          <button class="suggestion">
+            💻 Помоги написать код
+          </button>
+
+          <button class="suggestion">
+            ✍️ Напиши текст
+          </button>
+
+        </div>
+
+      </div>
+
+    </main>
+
+
+    <div id="typing" class="typing hidden">
+      <span></span>
+      <span></span>
+      <span></span>
+      AI печатает...
+    </div>
+
+
+    <form id="messageForm" class="input-area">
+
+      <textarea
+        id="messageInput"
+        placeholder="Напишите сообщение..."
+        rows="1"
+        autocomplete="off"
+      ></textarea>
+
+      <button
+        id="sendButton"
+        type="submit"
+        class="send-button"
+        aria-label="Отправить"
+      >
+        ➤
+      </button>
+
+    </form>
+
+
+    <footer>
+      AI Chat • Ваш персональный помощник
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
